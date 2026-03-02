@@ -1,0 +1,370 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  
+  width: 100%;
+  height: 100vh;
+ 
+  background: white;
+  background-image: linear-gradient(rgba(82, 196, 57, 0.5) .01em, transparent .05em), linear-gradient(90deg, rgba(82, 196, 57, 0.5) .01em, transparent .05em);
+  background-size: 1.7em 1.7em;
+  
+}
+
+.main{
+  cursor:url('http://upload.wikimedia.org/wikipedia/commons/d/de/POL_apple.jpg');
+}
+
+
+.topname{
+  padding-top: 5%;
+  padding-left: 4%; 
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 40%;
+  font-size: 24pt;
+}
+
+.changebutton, .colorbutton{
+  padding:20px;
+  background-color: #52C439;
+  border: 2px solid black; 
+  border-radius: 20px;
+  font-family: 'Work Sans', sans-serif;
+  margin: 5%; 
+  margin-left: 0%; 
+  width: 100%;  
+}
+
+.changebutton:hover{
+  background-color: #6251BA;
+  color:white; 
+}
+
+.colorbutton:hover{
+  background-color: #6251BA;
+  color:white; 
+}
+
+
+.gobackbutton{
+  position: absolute;
+  padding:20px;
+  background-color: #5b1ad3;
+  border: 2px solid black; 
+  border-radius: 100px;
+  font-family: 'Work Sans', sans-serif;
+  width: 15vh; 
+  height: 15vh;
+  color: white; 
+  right:4%; 
+  top: 50vh;
+  margin-top: 30%; 
+  margin-left: 20%; 
+  text-align:center;
+  font-size: 13px; 
+}
+
+.gobackbutton:hover{
+  background-color: white; 
+  color: #6251BA;
+  transform: rotate(360deg);
+  transition: transform 4s; 
+}
+
+.gobackbutton2{
+  position: sticky;
+  padding:20px;
+  background-color: #5b1ad3;
+  border: 2px solid black; 
+  border-radius: 100px;
+  font-family: 'Work Sans', sans-serif;
+  width: 13vh; 
+  height: 13vh;
+  color: white; 
+  left: 184vh; 
+  bottom: 5vh;
+/*   margin-top: 20%; 
+  margin-left: 20%;  */
+  text-align:center;
+  font-size: 13px; 
+}
+
+.gobackbutton2:hover{
+  background-color: white; 
+  color: #6251BA;
+  transform: rotate(360deg);
+  transition: transform 4s; 
+}
+
+.info{
+  position: sticky;
+  right:3%; 
+  top: 8%; 
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 20%;
+  font-size: 13pt;
+  float: right;
+  font-family: 'Work Sans', sans-serif;
+  line-height: 18pt; 
+  font-size: 13pt; 
+  padding-left: 10%; 
+}
+
+.bottom_info{
+  padding-top: 5%; 
+  padding-bottom: 10%; 
+}
+
+.alphabet-grid{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 70%;
+    padding-top: 3%; 
+    justify-content: space-evenly
+}
+
+
+.alphabet-grid-2{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 85%;
+    padding-top: 11%;
+    padding-left:9%; 
+}
+
+.letter2{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  height: 20vh;
+  column-gap: 0%;
+  row-gap: 0%;
+  width:20vh;
+  padding:2%; 
+  padding-left:2%;
+  padding-right:2%;
+}
+
+
+
+.letter{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  height: 18vh;
+  column-gap: 0%;
+  row-gap: 0%;
+  width:18vh;
+  padding:5%; 
+  padding-left:7%;
+  padding-right:5%;
+  padding-top: 7%;
+/*   margin-top:5%;
+  margin-left:3%;
+  margin-right:2%; */
+}
+
+
+.module{
+  position:relative;
+/*   width:3px;
+  height:3px; */
+}
+
+/* .module:hover{
+  transform: rotate(360deg);
+  transition: transform 1s; 
+} 
+ */
+
+
+.horizontal{
+  width: 45%; 
+  height: 45%; 
+  border-radius: 100px; 
+  position: absolute; 
+  background-color: #52C439;
+
+}
+
+.vertical{
+  height: 45%; 
+  width: 45%; 
+  border-radius: 100px;
+  left: 35%;
+  position: absolute;
+background-color: #5b1ad3;
+
+  opacity: 0.7;
+}
+
+#A .horizontal, #A .vertical{
+   transition: transform 1.5s, width 1.5s, height 1.5s, border-radius 1.5s; 
+}
+
+#B .horizontal, #B .vertical{
+   transition: transform 1.5s, width 1.5s, height 1.5s, border-radius 1.5s; 
+}
+
+#C .horizontal, #C .vertical{
+   transition: transform 1.5s, width 1.5s, height 1.5s, border-radius 1.5s; 
+}
+
+#D .horizontal, #D .vertical{
+   transition: transform 1.5s, width 1.5s, height 1.5s, border-radius 1.5s; 
+}
+
+#E .horizontal, #E .vertical{
+ transition: transform 1.5s, width 1.5s, height 1.5s, border-radius 1.5s; 
+}
+
+#F .horizontal, #F .vertical{
+   transition: transform 1.5s, width 1.5s, height 1.5s, border-radius 1.5s; 
+}
+
+#G .horizontal, #G .vertical{
+   transition: transform 1.5s, width 1.5s, height 1.5s, border-radius 1.5s; 
+}
+
+#H .horizontal, #H .vertical{
+  transition: transform 1.5s, width 1.5s, height 1.5s, border-radius 1.5s; 
+}
+
+#I .horizontal, #I .vertical{
+  transition: transform 1.5s, width 1.5s, height 1.5s, border-radius 1.5s; 
+}
+
+#J .horizontal, #J .vertical{
+  transition: transform 1.5s, width 1.5s, height 1.5s, border-radius 1.5s; 
+}
+
+#K .horizontal, #K .vertical{
+   transition: transform 1.5s, width 1.5s, height 1.5s, border-radius 1.5s; 
+}
+
+#L .horizontal, #L .vertical{
+   transition: transform 1.5s, width 1.5s, height 1.5s, border-radius 1.5s; 
+}
+
+
+#M .horizontal, #M .vertical{
+  transition: transform 1.5s, width 1.5s, height 1.5s, border-radius 1.5s; 
+}
+
+#N .horizontal, #N .vertical{
+  transition: transform 1.5s, width 1.5s, height 1.5s, border-radius 1.5s; 
+}
+
+#O .horizontal, #O .vertical{
+   transition: transform 1.5s, width 1.5s, height 1.5s, border-radius 1.5s; 
+}
+
+#P .horizontal, #P .vertical{
+  transition: transform 1.5s, width 1.5s, height 1.5s, border-radius 1.5s; 
+}
+
+#Q .horizontal, #Q .vertical{
+   transition: transform 1.5s, width 1.5s, height 1.5s, border-radius 1.5s; 
+}
+
+#R .horizontal, #R .vertical{
+  transition: transform 1.5s, width 1.5s, height 1.5s, border-radius 1.5s; 
+}
+
+#S .horizontal, #S .vertical{
+   transition: transform 1.5s, width 1.5s, height 1.5s, border-radius 1.5s; 
+}
+
+#T .horizontal, #T .vertical{
+   transition: transform 1.5s, width 1.5s, height 1.5s, border-radius 1.5s; 
+}
+
+#U .horizontal, #U .vertical{
+  transition: transform 1.5s, width 1.5s, height 1.5s, border-radius 1.5s; 
+}
+
+#V .horizontal, #V .vertical{
+   transition: transform 1.5s, width 1.5s, height 1.5s, border-radius 1.5s; 
+}
+
+#W .horizontal, #W .vertical{
+  transition: transform 1.5s, width 1.5s, height 1.5s, border-radius 1.5s; 
+}
+
+#X .horizontal, #X .vertical{
+   transition: transform 1.5s, width 1.5s, height 1.5s, border-radius 1.5s; 
+}
+
+#Y .horizontal, #Y .vertical{
+  transition: transform 1.5s, width 1.5s, height 1.5s, border-radius 1.5s; 
+}
+
+#Z .horizontal, #Z .vertical{
+   transition: transform 1.5s, width 1.5s, height 1.5s, border-radius 1.5s; 
+}
+
+.module{
+  transition: transform 3s;
+}
+
+/* homepage */
+
+#N-1 .horizontal, #N-1 .vertical{
+  transition: transform 1.5s, width 1.5s, height 1.5s, border-radius 1.5s; 
+}
+
+#N-2 .horizontal, #N-2 .vertical{
+  transition: transform 1.5s, width 1.5s, height 1.5s, border-radius 1.5s; 
+}
+
+#E-1 .horizontal, #E-1 .vertical{
+  transition: transform 1.5s, width 1.5s, height 1.5s, border-radius 1.5s; 
+}
+
+#E-2 .horizontal, #E-2 .vertical{
+ transition: transform 1.5s, width 1.5s, height 1.5s, border-radius 1.5s; 
+}
+
+#E-3 .horizontal, #E-3 .vertical{
+ transition: transform 1.5s, width 1.5s, height 1.5s, border-radius 1.5s; 
+}
+
+#D-1 .horizontal, #D-1 .vertical{
+  transition: transform 1.5s, width 1.5s, height 1.5s, border-radius 1.5s; 
+}
+
+#L-1 .horizontal, #L-1 .vertical{
+  transition: transform 1.5s, width 1.5s, height 1.5s, border-radius 1.5s; 
+}
+
+#P-1 .horizontal, #P-1 .vertical{
+  transition: transform 1.5s, width 1.5s, height 1.5s, border-radius 1.5s; 
+}
+
+#O-1 .horizontal, #O-1 .vertical{
+  transition: transform 1.5s, width 1.5s, height 1.5s, border-radius 1.5s; 
+}
+
+
+#I-1 .horizontal, #I-1 .vertical{
+ transition: transform 1.5s, width 1.5s, height 1.5s, border-radius 1.5s; 
+}
+
+#T-1 .horizontal, #T-1 .vertical{
+  transition: transform 1.5s, width 1.5s, height 1.5s, border-radius 1.5s; 
+}
+
+
+
+
+
+
+
+
